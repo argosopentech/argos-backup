@@ -1,2 +1,2 @@
-# argos-backup
+# Argos Backup
 Backup scripts for Argos Open Tech
