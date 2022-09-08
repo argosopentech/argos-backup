@@ -7,11 +7,12 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-# Set these to configure source and backup dir
+# Configure source and backup dir
 # export ARGOS_BACKUP_SOURCE_DIR="${HOME}/Desktop/data"
-# export ARGOS_BACKUP_DIR="${HOME}/Desktop/backup"
+# export ARGOS_BACKUP_DIR="${HOME}/git/argos-backup/"
+
 readonly SOURCE_DIR=$ARGOS_BACKUP_SOURCE_DIR
-readonly BACKUP_DIR=$ARGOS_BACKUP_DIR
+readonly BACKUP_DIR="$ARGOS_BACKUP_DIR/backup"
 
 readonly DATETIME="$(date +%s)"
 readonly BACKUP_PATH="${BACKUP_DIR}/${DATETIME}"
