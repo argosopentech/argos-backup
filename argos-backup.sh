@@ -8,8 +8,10 @@ set -o nounset
 set -o pipefail
 
 # Set these to configure source and backup dir
-readonly SOURCE_DIR="${HOME}/Desktop/data"
-readonly BACKUP_DIR="${HOME}/Desktop/backup"
+# export ARGOS_BACKUP_SOURCE_DIR="${HOME}/Desktop/data"
+# export ARGOS_BACKUP_DIR="${HOME}/Desktop/backup"
+readonly SOURCE_DIR=$ARGOS_BACKUP_SOURCE_DIR
+readonly BACKUP_DIR=$ARGOS_BACKUP_DIR
 
 readonly DATETIME="$(date +%s)"
 readonly BACKUP_PATH="${BACKUP_DIR}/${DATETIME}"
