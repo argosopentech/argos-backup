@@ -10,7 +10,7 @@ set -o nounset
 set -o pipefail
 
 # Configure source and backup dir
-# export ARGOS_BACKUP_DIR="${HOME}/git/argos-backup/"
+# export ARGOS_BACKUP_DIR="${HOME}/git/argos-backup"
 
 readonly SOURCE_DIR=$1
 readonly BACKUP_DIR="$ARGOS_BACKUP_DIR/backup"
