@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # A script to perform incremental backups using rsync
+# Usage:
+#	argos-backup <backup_dir>
 # Based on: https://linuxconfig.org/how-to-create-incremental-backups-using-rsync-on-linux
 
 set -o errexit
@@ -8,10 +10,9 @@ set -o nounset
 set -o pipefail
 
 # Configure source and backup dir
-# export ARGOS_BACKUP_SOURCE_DIR="${HOME}/Desktop/data"
 # export ARGOS_BACKUP_DIR="${HOME}/git/argos-backup/"
 
-readonly SOURCE_DIR=$ARGOS_BACKUP_SOURCE_DIR
+readonly SOURCE_DIR=$1
 readonly BACKUP_DIR="$ARGOS_BACKUP_DIR/backup"
 
 readonly DATETIME="$(date +%s)"
