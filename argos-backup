@@ -24,7 +24,6 @@ mkdir -p "${BACKUP_DIR}"
 rsync -av --delete \
   "${SOURCE_DIR}/" \
   --link-dest "${LATEST_LINK}" \
-  --exclude=".cache" \
   "${BACKUP_PATH}"
 
 rm -rf "${LATEST_LINK}"
