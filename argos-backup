@@ -2,7 +2,7 @@
 
 # A script to perform incremental backups using rsync
 # Usage:
-#	argos-backup <backup_dir>
+#	argos-backup <directory_to_backup>
 # Based on: https://linuxconfig.org/how-to-create-incremental-backups-using-rsync-on-linux
 
 set -o errexit
