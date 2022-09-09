@@ -13,7 +13,7 @@ set -o pipefail
 # export ARGOS_BACKUP_DIR="${HOME}/git/argos-backup"
 
 readonly SOURCE_DIR=$1
-readonly BACKUP_DIR="$ARGOS_BACKUP_DIR/backup"
+readonly BACKUP_DIR="$ARGOS_BACKUP_DIR/backup/$SOURCE_DIR"
 
 readonly DATETIME="$(date +%s)"
 readonly BACKUP_PATH="${BACKUP_DIR}/${DATETIME}"
