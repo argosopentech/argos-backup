@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# https://github.com/josegonzalez/python-github-backup
+# pip install github-backup
+# export GITHUB_ACCESS_TOKEN=SOME-GITHUB-TOKEN
+
+github-backup argosopentech --token $GITHUB_ACCESS_TOKEN --output-directory . --repositories
