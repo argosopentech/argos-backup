@@ -4,4 +4,4 @@
 # pip install github-backup
 # export GITHUB_ACCESS_TOKEN=SOME-GITHUB-TOKEN
 
-github-backup argosopentech --token $GITHUB_ACCESS_TOKEN --output-directory $ARGOS_BACKUP_DIR/backup/latest --repositories
+github-backup argosopentech --token $GITHUB_ACCESS_TOKEN --output-directory ~/git/GitHub/ --repositories
